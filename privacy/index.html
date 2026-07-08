@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Faith QuickBooks Integration</title>
+<meta name="description" content="How the Faith QuickBooks Online integration accesses and handles data.">
+</head>
+<body>
+<style>
+  :root {
+    --paper: #f6f5f0;
+    --surface: #fffffe;
+    --ink: #1b241f;
+    --muted: #58635b;
+    --faint: #6f7a72;
+    --accent: #2f5d50;
+    --accent-soft: #e4ede9;
+    --line: #e2e0d7;
+    --shadow: 0 1px 2px rgba(27,36,31,.05), 0 8px 30px rgba(27,36,31,.06);
+    --serif: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif;
+    --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #121614;
+      --surface: #1a201d;
+      --ink: #e9ede9;
+      --muted: #a3afa8;
+      --faint: #8c9891;
+      --accent: #86c3b1;
+      --accent-soft: #1f2b27;
+      --line: #2a322e;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 10px 34px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #121614; --surface: #1a201d; --ink: #e9ede9; --muted: #a3afa8;
+    --faint: #8c9891; --accent: #86c3b1; --accent-soft: #1f2b27; --line: #2a322e;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 10px 34px rgba(0,0,0,.35);
+  }
+  :root[data-theme="light"] {
+    --paper: #f6f5f0; --surface: #fffffe; --ink: #1b241f; --muted: #58635b;
+    --faint: #6f7a72; --accent: #2f5d50; --accent-soft: #e4ede9; --line: #e2e0d7;
+    --shadow: 0 1px 2px rgba(27,36,31,.05), 0 8px 30px rgba(27,36,31,.06);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  .wrap { max-width: 46rem; margin: 0 auto; padding: clamp(1.5rem, 4vw, 4rem) 1.4rem 4rem; }
+
+  header.doc {
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 1.9rem;
+    margin-bottom: 2.4rem;
+  }
+  .eyebrow {
+    font-size: .72rem;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--accent);
+    margin: 0 0 1rem;
+    display: flex; align-items: center; gap: .55rem;
+  }
+  .eyebrow .dot { width: .5rem; height: .5rem; border-radius: 50%; background: var(--accent); display: inline-block; }
+  h1 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: clamp(2.1rem, 5.5vw, 3rem);
+    line-height: 1.08;
+    letter-spacing: -.01em;
+    text-wrap: balance;
+    margin: 0 0 1.1rem;
+  }
+  .meta {
+    display: flex; flex-wrap: wrap; gap: .4rem 1.4rem;
+    font-size: .86rem; color: var(--faint);
+  }
+  .meta b { color: var(--muted); font-weight: 600; }
+
+  .lede { font-size: 1.12rem; color: var(--muted); margin: 0 0 2.6rem; }
+
+  section { margin: 0 0 2.3rem; scroll-margin-top: 1rem; }
+  h2 {
+    font-family: var(--serif);
+    font-size: 1.32rem;
+    font-weight: 600;
+    letter-spacing: -.005em;
+    margin: 0 0 .7rem;
+    display: flex; align-items: baseline; gap: .7rem;
+  }
+  h2 .n {
+    font-family: var(--sans);
+    font-size: .8rem; font-weight: 700;
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+    padding-top: .15rem;
+    min-width: 1.4rem;
+  }
+  p { margin: 0 0 1rem; }
+  section p, section ul { max-width: 40rem; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  ul { margin: 0 0 1rem; padding-left: 1.1rem; }
+  li { margin: 0 0 .45rem; }
+  strong { color: var(--ink); font-weight: 650; }
+
+  .callout {
+    background: var(--accent-soft);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 1.1rem 1.25rem;
+    margin: 1.4rem 0 0;
+    font-size: .96rem;
+  }
+  .callout p { margin: 0; }
+  .callout .tag {
+    font-size: .7rem; letter-spacing: .12em; text-transform: uppercase;
+    font-weight: 700; color: var(--accent); display: block; margin-bottom: .35rem;
+  }
+
+  footer.doc {
+    margin-top: 3rem; padding-top: 1.6rem;
+    border-top: 1px solid var(--line);
+    font-size: .88rem; color: var(--faint);
+  }
+  footer.doc a { font-weight: 600; }
+  footer .who { color: var(--muted); }
+</style>
+
+<div class="wrap">
+  <header class="doc">
+    <p class="eyebrow"><span class="dot"></span>Faith · QuickBooks Online Integration</p>
+    <h1>Privacy Policy</h1>
+    <div class="meta">
+      <span><b>Effective</b> July 7, 2026</span>
+      <span><b>Operator</b> Jonathan Hooker, The Innovation Barn</span>
+      <span><b>Contact</b> theflier13@gmail.com</span>
+    </div>
+  </header>
+
+  <p class="lede">This policy explains what data this application accesses through QuickBooks Online, why, and how it is handled. It is a private application built and run by one person for their own accounting, not a public product.</p>
+
+  <section>
+    <h2><span class="n">01</span>What this application is</h2>
+    <p>"Faith" is a private software assistant operated by Jonathan Hooker for The Innovation Barn and related personal and business accounting. It connects to QuickBooks Online through Intuit's official API so that the operator can review and manage <strong>their own company's</strong> financial records by asking questions in plain language.</p>
+    <p>It is not offered to the public, not listed in the QuickBooks App Store, and is used only by the operator and people the operator explicitly authorizes.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span>What data it accesses</h2>
+    <p>With your authorization through Intuit's OAuth sign-in, the application can access the QuickBooks Online company data you grant, which may include:</p>
+    <ul>
+      <li>Financial records and reports (profit &amp; loss, balance sheet, cash flow, ledgers, aging reports).</li>
+      <li>Transactions and lists such as invoices, bills, payments, deposits, journal entries, accounts, and items.</li>
+      <li>Contacts such as customers and vendors, and company profile information.</li>
+    </ul>
+    <p>It accesses only the company you connect, and only while your authorization remains active.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span>How the data is used</h2>
+    <p>Data is used for a single purpose: to answer the operator's questions about their own books and to carry out accounting actions the operator requests. The application does <strong>not</strong> sell data, does not share it for advertising, does not build profiles, and does not use it for any purpose beyond serving the operator's own requests.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span>Third parties involved</h2>
+    <p>To function, the application exchanges data with two services:</p>
+    <ul>
+      <li><strong>Intuit / QuickBooks Online</strong> — the source of the data, accessed through Intuit's API under your OAuth authorization.</li>
+      <li><strong>Anthropic (Claude API)</strong> — the AI model that interprets requests and generates responses. Relevant portions of your accounting data may be sent to this model to produce an answer. Anthropic does not use data submitted through its API to train its models by default.</li>
+    </ul>
+    <p>No other third parties receive your data. The application is not backed by any advertising network, analytics broker, or data reseller.</p>
+    <div class="callout">
+      <span class="tag">Good to know</span>
+      <p>Because an AI model generates the responses, output can be wrong or incomplete. The operator is responsible for verifying any figure or action before relying on it.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span>Where data is stored &amp; how it is protected</h2>
+    <p>The application runs on the operator's own computer. Authorization tokens and credentials are stored locally in access-restricted files (readable only by the operator's account) and are transmitted only to Intuit and the AI provider named above, over encrypted connections, as needed to serve a request.</p>
+    <p>Conversation history and notes the assistant keeps are stored locally on that same machine. No copy of your QuickBooks data is retained beyond what is needed to answer a request and what QuickBooks itself already holds.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span>Your control &amp; your rights</h2>
+    <ul>
+      <li><strong>Revoke access anytime.</strong> You can disconnect this application from your Intuit account (Intuit account settings → connected apps) at any time, which immediately ends its ability to read or change your data.</li>
+      <li><strong>Delete local data.</strong> The operator can delete the locally stored credentials and conversation history at any time.</li>
+      <li><strong>Ask questions.</strong> Direct any request or concern to the contact below.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="n">07</span>Changes to this policy</h2>
+    <p>If this application's data practices change, this page will be updated and the effective date above revised.</p>
+  </section>
+
+  <footer class="doc">
+    <p class="who">Faith · QuickBooks Online Integration — a private application operated by Jonathan Hooker, The Innovation Barn, Mandan, North Dakota, USA.</p>
+    <p>Questions: <a href="mailto:theflier13@gmail.com">theflier13@gmail.com</a> · Effective July 7, 2026</p>
+  </footer>
+</div>
+
+</body>
+</html>
